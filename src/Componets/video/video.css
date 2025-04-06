@@ -1,0 +1,32 @@
+.head-video{
+    width: 60%;
+}
+.head-video h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #987A54;
+}
+.head-video p{
+    font-weight: bold;
+    color: #DDD9D4;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.video-video{
+    display: flex;
+    justify-content: center;
+}
+.video button{
+    font-size: 20px;
+font-weight: bold;
+padding: 10px 60px ;
+color: #DDD9D4;
+  background-color: #987A54;
+border: none;
+border-radius: 7px;
+margin-top: 70px;
+}

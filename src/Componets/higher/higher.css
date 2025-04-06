@@ -1,0 +1,64 @@
+
+.head-higher  h2{
+
+    font-weight: bold;
+    color: #987A54;
+}
+.head-higher  p{
+
+    font-weight: bold;
+    font-family: "Almarai";
+    font-size: 20px;
+    color: #DDD9D4;
+}
+ 
+ .higher .card{
+    height: 350px;
+    border: none;
+    border-radius: 7px;
+    background-color: #362c27;
+}
+.higher .card i{
+    background-color: #987A54;
+    border-radius: 7px;
+    color: #DDD9D4;
+    width: 20%;
+    margin: auto 0;
+    padding: 10px;
+}
+
+.higher .card h4{
+margin-top: 20px;
+font-weight: bold;
+color: #DDD9D4;
+}
+.higher .card p{
+    margin-top: 20px;
+    font-weight: bold;
+    color: #DDD9D4;
+    }
+.img-higher img{
+    width: 94%;
+}
+@media (max-width: 760px) {
+    .higher .card{
+
+        height: 200px;
+        text-align: center;
+        }
+}
+.higher .last-higher h2{
+    font-weight: bold;
+    color: #987A54;
+}
+ .higher .last-higher button{
+    font-size: 20px;
+font-weight: bold;
+padding: 10px 60px ;
+color: #DDD9D4;
+  background-color: #987A54;
+border: none;
+border-radius: 7px;
+}
+
+

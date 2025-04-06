@@ -1,0 +1,56 @@
+
+  .toggleSection h2{
+    font-weight: bold;
+    color: #987A54;
+text-align: center;
+margin: 100px 0;
+  }
+  
+  .section1 {
+    border: 2px solid #987A54; 
+    margin: 10px auto; /* تعديل الهامش ليكون أفقيًا أيضًا */
+    width: 70%;
+    border-radius: 7px;
+    transition: background-color 0.3s ease-in-out; /* إضافة انتقال للخلفية */
+  }
+  
+  .section1.active {
+    background-color: rgba(86, 126, 220, .15);
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #DDD9D4;
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    padding: 15px;
+    font-weight: bold;
+  }
+  
+  .section-header i {
+    font-size: 18px;
+    color: #987A54;
+  }
+  
+  .section-content {
+    margin: 10px auto; /* تعديل الهامش ليكون أفقيًا أيضًا */
+    width: 70%;
+    border: 2px solid #987A54;
+    padding: 10px;
+    font-size: 20px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden; /* إضافة overflow: hidden; لإخفاء المحتوى الزائد */
+    transition: max-height 0.4s ease-in-out ,  opacity 0.5s ease-in-out; /* تطبيق انتقال على max-height و opacity بنفس المدة */
+    color: #DDD9D4;
+
+  }
+  
+  .section-content.active {
+    max-height: 500px; /* أو أي قيمة مناسبة لمحتوى القسم */
+    opacity: 1;
+
+  }

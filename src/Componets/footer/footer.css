@@ -1,0 +1,102 @@
+.footer{
+    width: 100%;
+    padding: 140px;
+    color: #DDD9D4;
+
+}
+.footer .container{
+border-radius: 25px;
+}
+.footer .first{
+    text-align: center;
+    background-color: #987b5427;
+    border-radius: 25px;
+
+}
+.footer .first h1{
+    color: #987A54;
+font-weight: bold;
+margin-top: 20px;
+}
+.footer .first h3{
+    padding: 10px 0;
+}
+.footer .first h3 span{
+    color: #987A54;
+    font-size: 40px;
+  font-weight: bold;
+  }
+.footer .first p{
+    color: #DDD9D4;
+  font-weight: bold;
+  margin: 15px 0;
+  }
+.footer button{
+    font-size: 22px;
+font-weight: bold;
+padding: 5px 10px ;
+color: #DDD9D4;
+background-color:#987b54 ;
+border: none;
+width: 200px;
+margin: 10px auto;
+text-align: center;
+border-radius: 7px;
+}
+.sec .icon{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.sec .icon h6 {
+    color: #987b54 ;
+
+font-size: 27px;
+margin-right: 10px;
+    
+    }
+    .sec .icon h4 {
+  
+        color: #DDD9D4;
+        font-size: 30px;
+            }
+            .sec ul li {
+           list-style: none;
+           margin: 70px 0;
+            }
+            @media (max-width: 800px) {
+        
+                .footer{
+                    width: 100%;
+                    padding: 20px;
+                }
+                .footer .first h1{
+              font-size: 22px;
+                  }
+                  .footer .first h3 span{
+                    font-size: 22px;
+                  }
+                  .sec ul  {
+                    display: grid;
+                    align-items: end;
+                    justify-content: end;
+                    margin: 0;
+                    padding: 0 20px;
+                }
+                .sec ul li {
+                    list-style: none;
+                    margin: 5px 0;
+                     }
+                     .sec .icon h4 {
+  
+                        font-size: 12px;
+                            }
+                            .sec .icon{
+                                display: flex;
+                                align-items: flex-end;
+                                
+                                }
+            }
+
+          
