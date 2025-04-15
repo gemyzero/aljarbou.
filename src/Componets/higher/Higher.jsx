@@ -6,7 +6,7 @@ import { IoMdEye } from 'react-icons/io';
 import { RxGlobe } from 'react-icons/rx';
 import { Link } from 'react-router-dom';
 import Aos from 'aos';
-
+import hi from '../../../public/images/Frame-conversions.png'
 export default function Higher() {
     useEffect(() => {
       Aos.init({
@@ -27,7 +27,7 @@ export default function Higher() {
 
 <div className="col-lg-6 col-md-12" data-aos="fade-down">
     <div className="img-higher w-100">
-        <img src="../../../public/images/Frame-conversions.png "  className='mx-auto' alt="" />
+        <img src={hi}  className='mx-auto' alt="" />
     </div>
 </div>
 
