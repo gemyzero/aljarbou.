@@ -1,4 +1,5 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Brands from './Componets/brands/Brands'
 import Footer from './Componets/footer/Footer'
@@ -10,6 +11,7 @@ import How from './Componets/how/How'
 import SectionWithToggle from './Componets/togglesection/SectionWithToggle'
 import Clients from './Componets/video/clients/Clients'
 import Video from './Componets/video/Video'
+import Home from './pages/Home'
 
 
 function App() {
@@ -17,15 +19,15 @@ function App() {
   return  (
 
     <>
-   <Header></Header>
-   <Headstart></Headstart>
-   <Higher></Higher>
-   <How></How>
-   <Video></Video>
-   <Clients></Clients>
-   <SectionWithToggle></SectionWithToggle>
-   <Brands></Brands>
-   <Footer></Footer>
+<BrowserRouter>
+<Routes>
+<Route  path='/'>
+  <Route index  element={<Home/>}/>
+
+</Route>
+
+</Routes>
+</BrowserRouter>
     </>
   )
 }

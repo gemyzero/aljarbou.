@@ -1,4 +1,5 @@
-.navbar .start-for-free button {
+.navbar .start-for-free a {
+  text-decoration: none;
   font-family: Poppins;
   font-size: 20px;
   font-weight: 700;
@@ -18,23 +19,32 @@ padding: 10px 60px ;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
+
 }
 @media (max-width: 780px) {
   .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     margin-left: 170px;
+    
   }
   .navbar .logo img {
     width: 40%;
   }
-  .navbar .start-for-free button {
+  .navbar .start-for-free a {
     font-size: 17px;
     margin-top: 8px;
    
   }
+}
+.N {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 5px 6px #00000029;
+  text-align: center;
 }
 
 @media (max-width: 640px) {
@@ -45,17 +55,14 @@ padding: 10px 60px ;
     margin-left: 130px;
   }
   .navbar .logo img {
-    width: 40%;
+    width: 100%;
+  }
+  .N {
+    display: inline;
+   
   }
 }
 
-.N {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  box-shadow: 0 5px 6px #00000029;
-  text-align: center;
-}
 
 
 
@@ -87,7 +94,7 @@ padding: 30px 0;
 display: block;
 color: #DDD9D4;
 }
-.info-hero button{
+.info-hero a{
     font-size: 22px;
 font-weight: bold;
 padding: 10px 100px ;
@@ -95,6 +102,7 @@ display: block;
 color: #DDD9D4;
 background-color: #987A54;
 border: none;
+text-decoration: none  ;
 border-radius: 7px;
 }
 
@@ -102,7 +110,7 @@ border-radius: 7px;
   .info-hero{
     text-align: center;
   }
-  .info-hero button{
+  .info-hero a{
     padding: 9px ;
     font-size: 17px;
 

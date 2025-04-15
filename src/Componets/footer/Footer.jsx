@@ -1,6 +1,7 @@
 import React from 'react'
 import './footer.css'
 import { IoCheckmarkCircle } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 export default function Footer() {
   return (
     <div className='footer'>
@@ -8,8 +9,8 @@ export default function Footer() {
    <div className='row first py-4'>
         <h1>سعر شهري ثابت وبأسعار معقولة        </h1>
         <h3>فقط <span>$19.95</span>  كل شهر        </h3>
-        <button className=''>ابدأ مجانًا
-        </button>
+        <Link to='https://meister.stacksmarket.co/'    className=' '>ابدأ مجانًا            </Link>
+
         <p>تجربة مجانية لمدة 14 يومًا | لا حاجة لبطاقة ائتمان
         </p>
       </div>

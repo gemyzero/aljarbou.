@@ -51,7 +51,8 @@ color: #DDD9D4;
     font-weight: bold;
     color: #987A54;
 }
- .higher .last-higher button{
+ .higher .last-higher a{
+    text-decoration: none;
     font-size: 20px;
 font-weight: bold;
 padding: 10px 60px ;

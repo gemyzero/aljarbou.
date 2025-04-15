@@ -1,8 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 import "./SectionWithToggle.css";
+import Aos from "aos";
 export default function SectionWithToggle() {
+    useEffect(() => {
+      Aos.init({
+        // اختيارات التهيئة (اختيارية)
+        duration: 1000, // مدة الحركة بالمللي ثانية
+        easing: 'ease-in-out', // نوع الحركة (ease, ease-in, ease-out, linear, الخ.)
+        once: true, // هل يتم تشغيل الحركة مرة واحدة فقط؟
+      });
+    }, []);
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
@@ -25,7 +34,7 @@ export default function SectionWithToggle() {
 </h2>
 
 
-      <div>
+      <div data-aos="fade-down"> 
         <div
           className={`section1 mx-auto ${isOpen1 ? "active" : ""}`}
           onClick={toggleSection1}
@@ -50,7 +59,8 @@ export default function SectionWithToggle() {
         </p>
       </div>
       </div>
-      <div>
+
+      <div data-aos="fade-right">
         <div
           className={`section1 mx-auto ${isOpen2 ? "active" : ""}`}
           onClick={toggleSection2}
@@ -76,7 +86,7 @@ export default function SectionWithToggle() {
       </div>
       </div>
 
-      <div>
+      <div data-aos="fade-up">
         <div
           className={`section1 mx-auto ${isOpen3 ? "active" : ""}`}
           onClick={toggleSection3}

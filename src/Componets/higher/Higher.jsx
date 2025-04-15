@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { MdNotificationsActive } from "react-icons/md";
 import './higher.css'
 import { FaTruckMoving } from 'react-icons/fa';
 import { IoMdEye } from 'react-icons/io';
 import { RxGlobe } from 'react-icons/rx';
+import { Link } from 'react-router-dom';
+import Aos from 'aos';
 
 export default function Higher() {
+    useEffect(() => {
+      Aos.init({
+        // اختيارات التهيئة (اختيارية)
+        duration: 1000, // مدة الحركة بالمللي ثانية
+        easing: 'ease-in-out', // نوع الحركة (ease, ease-in, ease-out, linear, الخ.)
+        once: true, // هل يتم تشغيل الحركة مرة واحدة فقط؟
+      });
+    }, []);
   return (
     <div className=' higher p-5 my-5'>
       <div className="head-higher text-center mt-4">
@@ -15,16 +25,16 @@ export default function Higher() {
         </div>
       <div className="row m-auto" style={{width:'95%' ,alignItems:'center'}}>
 
-<div className="col-lg-6 col-md-12">
+<div className="col-lg-6 col-md-12" data-aos="fade-down">
     <div className="img-higher w-100">
         <img src="../../../public/images/Frame-conversions.png "  className='mx-auto' alt="" />
     </div>
 </div>
 
-<div className="col-lg-6 col-md-12">
+<div className="col-lg-6 col-md-12" data-aos="fade-right">
 
     <div className="row my-4">
-    <div className="col-lg-6 col-md-6 col-12 mx-auto my-3  ">
+    <div className="col-lg-6 col-md-6 col-12 mx-auto my-3  "data-aos="flip-up">
       <div className="  card p-4">
       <div className="">
         <i>      <MdNotificationsActive  /></i>
@@ -33,7 +43,7 @@ export default function Higher() {
         <p>    قم بالوصول إلى عملائك في أي مكان وأرسل لهم عروضًا وإصدارات منتجات جديدة        </p>
       </div>
         </div>
-        <div className="col-lg-6  col-md-6 col-12 mx-auto my-3 ">
+        <div className="col-lg-6  col-md-6 col-12 mx-auto my-3 "data-aos="flip-up">
       <div className="  card p-4">
         <div className="">
         <i>      <FaTruckMoving  /></i>
@@ -44,7 +54,7 @@ export default function Higher() {
         <p>زد مبيعاتك وتتبع طلباتك القادمة من تطبيق الهاتف المحمول        </p>
       </div>
         </div>
-        <div className="col-lg-6  col-md-6 col-12 mx-auto my-3 ">
+        <div className="col-lg-6  col-md-6 col-12 mx-auto my-3 "data-aos="flip-up">
       <div className="  card p-4">
         <div className="">
         <i>      <IoMdEye  /></i>
@@ -55,7 +65,7 @@ export default function Higher() {
         </p>
       </div>
         </div>
-        <div className="col-lg-6  col-md-6 col-12 mx-auto my-3 ">
+        <div className="col-lg-6  col-md-6 col-12 mx-auto my-3 " data-aos="flip-up">
       <div className="  card p-4">
         <div className="">
         <i>      <RxGlobe  /></i>
@@ -66,7 +76,7 @@ export default function Higher() {
         </p>
       </div>
         </div>
-        <div className="col-lg-6  col-md-6 col-12 mx-auto my-3 ">
+        <div className="col-lg-6  col-md-6 col-12 mx-auto my-3 " data-aos="flip-up">
       <div className="  card p-4">
         <div className="">
         <i>      <MdNotificationsActive  /></i>
@@ -77,7 +87,7 @@ export default function Higher() {
         </p>
       </div>
         </div>
-        <div className="col-lg-6  col-md-6 col-12 mx-auto my-3 ">
+        <div className="col-lg-6  col-md-6 col-12 mx-auto my-3 " data-aos="flip-up">
       <div className="  card p-4">
         <div className="">
         <i>      <MdNotificationsActive  /></i>
@@ -97,10 +107,10 @@ export default function Higher() {
 
       </div>
       <div className="last-higher text-center mt-4">
-        <h2 className='fw-bold'>هل أنت مستعد لتعزيز مبيعاتك عبر الهاتف المحمول؟
+        <h2 className='fw-bold mb-5'>هل أنت مستعد لتعزيز مبيعاتك عبر الهاتف المحمول؟
         </h2>
-        <button className='my-4'>ابدأ مجانًا
-        </button>
+        <Link to='https://meister.stacksmarket.co/'    className=' mt-2'>ابدأ مجانًا            </Link>
+
 
         </div>
       

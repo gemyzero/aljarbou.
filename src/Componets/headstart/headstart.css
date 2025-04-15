@@ -16,7 +16,8 @@ color: #DDD9D4;
     font-size: 50px;
     }
 
-.Headstart button {
+.Headstart a {
+    text-decoration: none;
        font-size: 22px;
 font-weight: bold;
 padding: 10px 60px ;
