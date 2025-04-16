@@ -23,7 +23,7 @@ export default function Clients() {
 <div className='container p-5 '>
       <h2  >ماذا يقول عملائنا الراضون الذين يزيد عددهم عن 1000 عميل؟
       </h2>
-      <div className="row p-5 " style={{justifyContent:'center'}}>
+      <div className="row p-lg-5 p-md-5 p-sm--0 " style={{justifyContent:'center'}}>
         <div className="col-lg-4" data-aos="flip-right">
             <img src={card1} alt="" style={{width:'100%'}} />
         </div>
