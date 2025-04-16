@@ -11,7 +11,7 @@ export default function Headstart() {
         // اختيارات التهيئة (اختيارية)
         duration: 1000, // مدة الحركة بالمللي ثانية
         easing: 'ease-in-out', // نوع الحركة (ease, ease-in, ease-out, linear, الخ.)
-        once: true, // هل يتم تشغيل الحركة مرة واحدة فقط؟
+        once: false, // هل يتم تشغيل الحركة مرة واحدة فقط؟
       });
     }, []);
   return (
