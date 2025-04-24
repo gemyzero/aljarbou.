@@ -12,6 +12,8 @@ import SectionWithToggle from './Componets/togglesection/SectionWithToggle'
 import Clients from './Componets/video/clients/Clients'
 import Video from './Componets/video/Video'
 import Home from './pages/Home'
+import LoginPage from './pages/LoginPage'
+import RegisterPage from './pages/RegisterPage'
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
 <Routes>
 <Route  path='/'>
   <Route index  element={<Home/>}/>
+<Route path='LoginPage' element={<LoginPage/>}/>
+<Route path='RegisterPage' element={<RegisterPage/>}/>
 
 </Route>
 

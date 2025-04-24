@@ -54,12 +54,18 @@ padding: 10px 60px ;
     justify-content: center;
     margin-left: 130px;
   }
+  .navbar .logo {
+    width: 120px;
+  }
   .navbar .logo img {
     width: 100%;
   }
   .N {
     display: inline;
    
+  }
+  .navbar .start-for-free a{
+    padding: 10px;
   }
 }
 
