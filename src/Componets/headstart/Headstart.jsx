@@ -24,10 +24,10 @@ export default function Headstart() {
 <h1>احصل على بداية جيدة مع قوالب التطبيقات المصممة باحترافية لمتجرك</h1>
     <p className='py-4'>مع أكثر من 20 قالبًا مصممًا بشكل جميل للاختيار من بينها، فمن المؤكد أنك ستجد المظهر الذي يتناسب تمامًا مع علامتك التجارية واحتياجات البيع الخاصة بك.
     </p>
-    <Link to='https://meister.stacksmarket.co/'    className=' '>ابدأ مجانًا            </Link>
+    <Link to='https://meister.stacksmarket.co/'    className=''>ابدأ مجانًا            </Link>
 
       </div>
-      <div className='img-head row'>
+      <div className='img-head row mt-5'>
 <img src={examples} alt="" />
       </div>
      </div>

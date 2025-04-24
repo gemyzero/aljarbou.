@@ -29,12 +29,12 @@ export default function SectionWithToggle() {
   };
 
   return (
-    <div className="container toggleSection mb-5 ">
+    <div className=" toggleSection mb-5 ">
 <h2 >الأسئلة الشائعة
 </h2>
 
 
-      <div data-aos="fade-down"> 
+      <div data-aos="fade-down p-0 c"> 
         <div
           className={`section1 mx-auto ${isOpen1 ? "active" : ""}`}
           onClick={toggleSection1}

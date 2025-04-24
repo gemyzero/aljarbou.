@@ -4,6 +4,7 @@
     color: #987A54;
 text-align: center;
 margin: 100px 0;
+
   }
   
   .section1 {
@@ -53,4 +54,7 @@ margin: 100px 0;
     max-height: 500px; /* أو أي قيمة مناسبة لمحتوى القسم */
     opacity: 1;
 
+  }
+  .toggleSection .section1{
+    font-size: smaller;
   }
