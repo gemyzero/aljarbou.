@@ -1,0 +1,15 @@
+.register .row{
+width: 60%;
+}
+@media (max-width: 1000px) {
+
+    .register .row{
+        width: 100%;
+        }
+}
+@media (max-width: 640px) {
+
+    .register .row{
+        width: 100%;
+        }
+}

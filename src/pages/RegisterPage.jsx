@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import logo from '../../public/images/Logo.png'
 import { Link } from 'react-router-dom';
-
+import './RegisterPage.css'
 export default function RegisterPage() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -65,15 +65,15 @@ export default function RegisterPage() {
   };
 
   return (
-<div className=" py-5 bg-white">
+<div className=" py-5 bg-white  register">
   
-   <div className=" logo   py-lg-1  my-5  px-lg-5 d-flex justify-content-center align-items-center">
+   <div className=" logo m   py-lg-1  my-5  px-lg-5 d-flex justify-content-center align-items-center">
               <img src={logo} alt="" className='mb-2' style={{width:'150px'}}/>
           </div>  
 
-<div className="container mt-0 d-flex   justify-content-center align-items-center vh-100 my-5">
-      <div className="card p-4 shadow-lg  mt-5 w-50  ">
-        <h2 className="text-center mb-3">إنشاء حساب</h2>
+<div className="container mt-0 d-flex   justify-content-center align-items-center  my-5">
+      <div className=" p-4 shadow-lg row     ">
+        <h2 className="text-center x mb-3">إنشاء حساب</h2>
         <p className="text-center text-muted mb-3">أنت على بعد خطوة واحدة من تطوير عملك</p>
         <form onSubmit={handleSubmit} className=''>
           <div className="mb-3 text-end">
