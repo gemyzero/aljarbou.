@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../../public/images/Logo.png'
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function LoginPage() {
   {
@@ -103,7 +104,8 @@ export default function LoginPage() {
             <span className="me-2"></span> تسجيل الدخول باستخدام Google
           </button>
           <div className="mt-3 text-center">
-            <a href="#" className="text-decoration-none">ليس لديك حساب؟ التسجيل</a>
+            <Link to='/RegisterPage'>            <a href="#" className="text-decoration-none">ليس لديك حساب؟ التسجيل</a>
+            </Link>
           </div>
           <div className="text-center mt-2">
             <a href="#" className="text-decoration-none">نسيت كلمة المرور؟</a>

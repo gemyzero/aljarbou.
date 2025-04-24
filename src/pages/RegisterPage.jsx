@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import logo from '../../public/images/Logo.png'
+import { Link } from 'react-router-dom';
 
 export default function RegisterPage() {
   const [firstName, setFirstName] = useState('');
@@ -175,7 +176,7 @@ export default function RegisterPage() {
           <span className="me-2"></span> التسجيل عن طريق Google
         </button>
         <p className="mt-3 text-center">
-          هل لديك حساب بالفعل؟ <a href="#">تسجيل الدخول</a>
+          هل لديك حساب بالفعل؟ <Link to='/LoginPage'><a href="#">تسجيل الدخول</a></Link>
         </p>
       </div>
     </div>
